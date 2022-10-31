@@ -3,7 +3,7 @@ class Solution:
         if intervals == []:
             return []
         result = []
-        result.sort()
+        intervals.sort()
         for interval in intervals:
             
 #In the if statement we check if the next interval's beginning time is greater than the previous interval's end time
