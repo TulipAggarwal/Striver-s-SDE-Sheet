@@ -12,11 +12,11 @@ class Solution:
                 nums[low],nums[mid] = nums[mid],nums[low]
                 low +=1
                 mid +=1
-                print(nums)
+            
             elif nums[mid] == 1:
                 mid +=1
-                print(nums)
+              
             else:
                 nums[mid],nums[high] = nums[high],nums[mid]
                 high -=1
-                print(nums)
+              
