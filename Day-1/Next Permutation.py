@@ -1,18 +1,15 @@
-class Solution:
-    
+class Solution:   
     #Swapping function
     def swap(self, nums, indx1, indx2):
         temp = nums[indx1]
         nums[indx1] = nums[indx2]
-        nums[indx2] = temp
-    
+        nums[indx2] = temp 
     #Reversing function for the pointers
     def reverse(self, nums, beg, end):
         while beg<end:
             self.swap(nums, beg, end)
             beg +=1
-            end -=1
-        
+            end -=1     
     #Permutation function
     def nextPermutation(self, nums: List[int]) -> None:
         if len(nums) == 1:
@@ -25,8 +22,7 @@ class Solution:
         self.reverse(nums, dec+1, len(nums)-1)
         print(nums)
         if dec == -1:
-            return
-      
+            return 
         next_num = dec + 1
         while next_num < len(nums) and nums[next_num] <= nums[dec]:
             next_num +=1
